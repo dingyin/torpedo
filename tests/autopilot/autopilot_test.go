@@ -469,12 +469,12 @@ var _ = Describe(fmt.Sprintf("{%sPoolExpand}", testSuiteName), func() {
 		Step("validating and verifying size of storage pools", func() {
 			ValidateStoragePools(contexts)
 		})
-
+/*
 		Step("validating autopilot rule objects", func() {
 			err := Inst().S.ValidateAutopilotRuleObjects()
 			Expect(err).NotTo(HaveOccurred())
 		})
-
+*/
 		Step(fmt.Sprintf("wait for unscheduled resize of storage pool (%s)", unscheduledResizeTimeout), func() {
 			time.Sleep(unscheduledResizeTimeout)
 		})
